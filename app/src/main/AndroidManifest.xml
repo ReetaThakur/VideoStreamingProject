@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reeta.videostreamingproject">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gallery"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gallery"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VideoStreamingProject">
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:exported="false"
+            android:theme="@style/VideoPlayerTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
